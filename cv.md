@@ -23,3 +23,10 @@ function sum(a, b){
 let result = sum(1, 2);
 alert( result );
 ```
+## Education:
+* University: Belarusian State University
+* Courses:
+    * CS50
+    * FreeCodeCamp
+## English
+A2. 
