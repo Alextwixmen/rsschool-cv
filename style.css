@@ -1,0 +1,291 @@
+@font-face {
+    font-family: 'KdamThmorPro';
+    src: url("assets/fonts/Kdam_Thmor_Pro/KdamThmorPro-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url("assets/fonts/Nanum_Gothic/NanumGothic-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url("assets/fonts/Nanum_Gothic/NanumGothic-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'NanumGothic';
+    src: url("assets/fonts/Nanum_Gothic/NanumGothic-ExtraBold.ttf");
+    font-weight: 800;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+  
+body{
+    font-family: 'NanumGothic';
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: azure;
+    font-size: 20px;
+    color:rgb(61, 36, 112);
+    font-weight: 500;
+}
+*{
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+        margin: 0;
+        padding: 0;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/*Header start*/
+
+.nav_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-weight: 800;
+    font-size: 25px;
+}
+.header{
+    background-color: rgb(61, 36, 112);
+}
+.nav_link{
+    color: rebeccapurple;
+    padding: 0 20px;
+    line-height: 200%;
+    -webkit-transition: 0.5s ease;
+
+}
+
+.nav_link:hover{
+    color:white;
+    transition: .3s linear;
+    transform: scale(1.01);
+}
+/*Header end*/
+/*Main start*/
+.main{
+    flex-grow: 1;
+    margin-top: 5%;
+}
+.main-container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.section{
+    width: 50%;
+}
+@media (max-width:768px){
+    .section{
+        width: 100%;
+    }
+   .header, .main, .footer{
+       max-width: 768px;
+       overflow-x:hidden;
+   }
+}
+.my_photo{
+    width:200px;
+    border: 2px solid rebeccapurple;
+    border-radius: 10%;
+}
+.about_photo_block{
+    margin-bottom: 20px;
+}
+.about_desctiprtion{
+    margin-bottom: 20px;
+}
+.about_desctiprtion>h1{
+    padding-bottom: 20px;
+}
+#about{
+    display: flex;
+    gap: 10px;
+}
+@media (max-width: 768px){
+    #about{
+        flex-wrap: wrap;
+    }
+    .my_photo{
+        width: 80%;
+        text-align: center;
+    }
+    .about_desctiprtion>h1{
+        text-align: center;
+    }
+    .about_photo_block{
+        text-align: center;
+    }
+}
+.header_style{
+    color: rebeccapurple;
+    font-family: 'KdamThmorPro';
+    font-size: 25px;
+}
+.contacts_header{
+    margin: 0px 0px 20px 0px;
+    padding: 0;
+}
+.contacts_list{
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.contacts_list>li{
+    padding-bottom: 10px;
+}
+.contacts_list>li:last-child{
+    padding:0;
+}
+.contact_image_icon{
+    width: 30px;
+}
+.contact_block{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.skills_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.skills_block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    min-width: 240px;
+}
+.skils_icon{
+    width: 30px;
+}
+.level_list{
+    display: flex;
+    justify-content: space-between;
+    gap:5px;
+    order: 3;
+    padding: 0;
+}
+.skils_icon_block{
+    order: 1;
+}
+.skills_text{
+    order: 2;
+}
+.level_point{
+    width: 15px;
+    height: 15px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+    padding-left: 5px;
+    display: inline;
+}
+.gray_point{
+    background-color: gray;
+}
+.lang_item{
+    padding-left: 5px;
+}
+.lang_item:before{
+    content: '';
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    width: 15px;
+    height: 15px;
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+#education>h2{
+    padding-bottom: 20px;
+}
+.courses_icon{
+    width: 30px;
+}
+.courses_list{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.courses_block{
+    display: flex;
+    gap: 10px;
+}
+.corses_text{
+    order: 2;
+}
+.courses_icon_block{
+    order: 1;
+}
+.code_example{
+    display: block;
+    white-space: pre;
+    margin: 0;
+    padding: 0;
+    margin-left: 1px;
+}
+code{
+    white-space: pre;
+    margin-left: 1px;
+}
+.project_block{
+    display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+#projects>h2{
+    padding-bottom: 20px;
+}
+.project_text{
+    color: #F2785C;
+    font-weight: bold;
+    order: 2;
+}
+.travel_icon{
+    border-radius: 50%;
+    width: 30px;
+    order: 1;
+}
+/*Main end*/
+/*Footer start*/
+.footer{
+    background-color: rgb(61, 36, 112);
+}
+/*Footer end*/
+.footer_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_image{
+    width: 64px;
+}
+.footer_year{
+    color: white;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 200%;
+}
