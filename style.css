@@ -59,6 +59,12 @@ h1,h2,h3,h4,h5,h6,p{
     font-weight: 800;
     font-size: 25px;
 }
+@media (max-width:768px){
+    .nav_list{
+        flex-direction: column;
+        padding: 0;
+    }
+}
 .header{
     background-color: rgb(61, 36, 112);
 }
@@ -130,6 +136,7 @@ h1,h2,h3,h4,h5,h6,p{
     .about_photo_block{
         text-align: center;
     }
+   
 }
 .header_style{
     color: rebeccapurple;
@@ -219,6 +226,12 @@ h1,h2,h3,h4,h5,h6,p{
 #education>h2{
     padding-bottom: 20px;
 }
+
+    @media (max-width: 768px){
+        .education_info{
+            padding-left: 40px;
+        }
+    }
 .courses_icon{
     width: 30px;
 }
@@ -245,6 +258,12 @@ h1,h2,h3,h4,h5,h6,p{
     padding: 0;
     margin-left: 1px;
 }
+@media (max-width: 768px){
+    .code_example{
+        padding-left: 40px;
+    }
+}
+
 code{
     white-space: pre;
     margin-left: 1px;
@@ -254,6 +273,11 @@ code{
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
+}
+@media(max-width: 768px){
+    .project_block{
+        margin-left: 40px;
+    }
 }
 
 #projects>h2{
