@@ -1,0 +1,677 @@
+/* reset */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Variables*/
+:root {
+    --hd-bt-font: "Red Hat Text";
+    /* hd- headers*/
+    --main-font: Aleo;
+    --main-color: #F2785C;
+    --btn-color-text: #0D606F;
+}
+
+/* Variables*/
+button{
+    cursor: pointer;
+    transition: .3s linear;
+}
+button:hover{
+    opacity: 50%;
+    /* transition: 0.5s ease; */
+    transition: .3s linear;
+}
+html {
+    scroll-behavior: smooth; 
+  }
+body {
+    background-color: #fff;
+}
+
+/*Header*/
+header {
+    position: absolute;
+    left: 50%;
+    margin-left: -720px;
+    height: 90px;
+    width: 1440px;
+    background-color: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.container {
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button_header {
+    background: var(--btn-color-text);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    width: 103px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 29px;
+    border: none;
+}
+
+.button_header>span {
+    font-family: var(--hd-bt-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.logo_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo_container>img {
+    margin-right: 6px;
+    margin-top: -10px;
+}
+
+.logo_text {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin-right: 42px;
+    font-family: var(--hd-bt-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+li:last-child {
+    margin-right: 0px;
+}
+
+.header_li{
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: 0.3s linear;
+}
+.header_li:hover{
+    opacity: 50%;
+    transition: 0.3s linear;
+
+}
+
+/*Header*/
+
+/*Main*/
+main {
+    width: 1440px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+/*Preview*/
+.preview {
+    margin-bottom: 77px;
+}
+
+
+.preview_info {
+    width: 892px;
+    height: 422px;
+    position: absolute;
+    top: 122px;
+    left: 120px;
+    z-index: 2;
+}
+
+h1 {
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFF;
+    text-align: left;
+    padding-bottom: 32px;
+    letter-spacing: 1px;
+}
+
+.preview_info>p {
+    font-family: var(--main-font);
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFF;
+    text-align: left;
+    margin-bottom: 46px;
+    
+}
+
+.preview_search {
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 560px;
+    height: 22px;
+    margin: 32px 0px 41px 41px;
+}
+
+.search_text {
+    font-family: var(--main-font);
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: var(--main-color);
+}
+
+.button_search {
+    width: 228px;
+    height: 59px;
+    background: var(--btn-color-text);
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    margin-right: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+}
+
+.button_text {
+    font-family: var(--hd-bt-font);
+    color: #FFF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+
+/*Preview_End*/
+/*Steps_Start*/
+.steps>h2 {
+    font-family: var(--hd-bt-font);
+    color: var(--main-color);
+    font-size: 40px;
+    line-height: 53px;
+    font-style: normal;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 406px 40px 423px;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    background: var(--main-color);
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.three_steps {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    margin-left: 223px;
+}
+
+.third {
+    margin-right: 223px;
+}
+
+.steps_text>span {
+    font-family: var(--main-font);
+    color: var(--btn-color-text);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.steps_text {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bike_text {
+    margin-left: 120px;
+    margin-top: 27px;
+    margin-bottom: 98px;
+}
+
+.calendar_text {
+    margin-top: 28px;
+    margin-right: -52px;
+}
+
+.plane_text {
+    margin-top: 28px;
+    margin-right: 125px;
+}
+
+/*Steps_End*/
+/*Destinations_start*/
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.destinations>h2 {
+    text-align: center;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin-bottom: 46px;
+}
+
+.wrapper {
+    width: 2520px;
+    height: 800px;
+    position: relative;
+    top: 0px;
+    left: -540px;
+}
+
+
+.slider {
+    height: inherit;
+    position: relative;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+}
+.slide2, .slide3{
+    position: relative;
+}
+.slied2_text{
+    font-family: var(--hd-bt-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+    position: absolute;
+    bottom: 40px;
+    left: 15px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.control{
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 50%;
+}
+.conrol2{
+    background-color: #F2785C;
+}
+
+.button_find {
+    background-color: var(--btn-color-text);
+    width: 228px;
+    height: 59px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    position: relative;
+    z-index: 4;
+    left: 607px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 31px 0 34px;
+    margin-bottom: 80px;
+    border: none;
+}
+
+.button_find>span {
+    font-family: var(--hd-bt-font);
+    color: #FFF;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    margin: 13.5px 2px;
+}
+
+/*Destinations_end*/
+/*Travel_Stories_start*/
+.stories>h2 {
+    color: var(--main-color);
+    font-family: var(--hd-bt-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.travel_stories {
+    height: 1331px;
+    background: url(img/background_travel_stories.jpg) no-repeat;
+    background-color: rgba(255, 255, 255, 0.7);
+    position: relative;
+}
+
+.travel_content {
+    height: 1270px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 40px 125px 41px 120px;
+}
+
+.photo {
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+    height: 250px;
+    width: 100%;
+    margin: 0;
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+}
+
+.readmore {
+    font-weight: bold;
+    color: #0D606F;
+}
+
+.flex_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin-bottom: 30px;
+}
+
+.descrp {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.descript1 {
+    width: 760px;
+    height: 184px;
+}
+
+.utah_block {
+    background: url(img/Utah_img.png) no-repeat;
+}
+
+.mountains_block {
+    background: url(img/mountains_img.png) no-repeat;
+}
+
+.journey_block {
+    background: url(img/journey_img.png) no-repeat;
+}
+
+.thailand_block {
+    background: url(img/Thai_img.png) no-repeat;
+}
+
+.descrp>h3 {
+    font-family: var(--main-font);
+    color: #0D606F;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+}
+
+.descript1 {
+    color: #0D606F;
+    font-family: var(--main-font);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.flex_container:last-child {
+    margin-bottom: 0px;
+}
+.button_last{
+width: 228px;
+height: 59px;
+background: #0D606F;
+box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+border-radius: 10px;
+position: absolute;
+top:1170px;
+left:608px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 31px 18px 33.5px;
+border: none;
+}
+.button_text>span{
+    margin-right: 9px;
+}
+/*Travel_Stories_end*/
+/*Footer_start*/
+footer{
+    width: 1440px;
+    margin: 0 auto;
+    margin-top: -60px;
+    position: relative;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer>p{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFF;
+    text-align: center;
+}
+.footer_icons_left{
+    margin-right: 124px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 18px;
+}
+.footer_icons>img{
+    margin-right: 1px;
+}
+.footer_icons_right{
+    display: flex;
+    justify-content: space-between;
+    gap: 138px;
+}
+
+/*Footer_end*/
+
+
+/*Main*/
