@@ -1,2 +1,2 @@
-https://Alextwixmen.github.io/rsschool-cv/cv
-https://Alextwixmen.github.io/rsschool-cv/
+https://rolling-scopes-school.github.io/Alextwixmen-JSFEPRESCHOOL2022Q2/travel/
+
